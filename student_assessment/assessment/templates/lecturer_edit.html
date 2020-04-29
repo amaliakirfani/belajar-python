@@ -1,0 +1,17 @@
+{% include 'headers.html' %}
+{% include 'navbar.html' %}
+
+<form class="mt-5" method="POST">
+{% csrf_token %}
+  <div class="form-group">
+    <label>NIDN</label>
+    <input type="text" name="nidn" value="{{lecturer.lecturer_nidn}}" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Nama</label>
+    <input type="text" name="nama" value={{lecturer.lecturer_name}} class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
